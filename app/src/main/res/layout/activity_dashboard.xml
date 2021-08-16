@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:text=" Logged in with,   "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textColor="#000"
+            android:id="@+id/textView1"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp" />
+
+        <Button
+            android:text="HOME"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="42dp"
+            android:id="@+id/home"
+            android:backgroundTint="@color/cardview_dark_background"
+            android:radius="5dp"/>
+
+
+        <TextView
+            android:id="@+id/texttitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter Students details below"
+            android:textSize="24dp"
+            android:gravity="center"
+            android:textColor="#FF3700B3"
+            android:textFontWeight="@integer/material_motion_duration_long_1"
+            android:layout_below="@+id/home"
+            android:layout_marginTop="20dp"
+            />
+        <TextView
+            android:id="@+id/Nametext"
+            android:text="Name"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"
+            android:textColor="#000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/texttitle"
+            />
+        <EditText
+            android:id="@+id/name"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Student Name"
+            android:textSize="24dp"
+            android:layout_below="@+id/Nametext"
+            android:inputType="textPersonName"
+            />
+        <TextView
+            android:id="@+id/textrollno"
+            android:text="Roll No"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"
+            android:textColor="#000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/name"
+            />
+        <EditText
+            android:id="@+id/contact"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Roll Number"
+            android:textSize="24dp"
+            android:layout_below="@+id/textrollno"
+            android:inputType="number"
+            />
+        <TextView
+            android:id="@+id/textmarks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter Students Marks below"
+            android:textSize="24dp"
+            android:gravity="center"
+            android:backgroundTint="#FF9800"
+            android:textColor="#FF3700B3"
+            android:textFontWeight="@integer/material_motion_duration_long_1"
+            android:layout_below="@+id/contact"
+            android:layout_marginTop="20dp"
+            />
+        <TextView
+            android:id="@+id/Engsub"
+            android:text="English"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"
+            android:textColor="#000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/textmarks"
+            />
+        <EditText
+            android:id="@+id/dob"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="English"
+            android:textSize="24dp"
+            android:layout_below="@+id/Engsub"
+            android:inputType="number"
+            />
+
+
+        <TextView
+            android:id="@+id/subkan"
+            android:text="Kannada"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"
+            android:textColor="#000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/dob"
+            />
+        <EditText
+            android:id="@+id/subjectkannada"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24dp"
+            android:inputType="number"
+            android:hint="Kannada"
+            android:layout_below="@+id/subkan"
+            />
+
+        <TextView
+            android:id="@+id/subhindi"
+            android:text="Hindi"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"
+            android:textColor="#000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/subjectkannada"
+            />
+        <EditText
+            android:id="@+id/subjecthindi"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24dp"
+            android:inputType="number"
+            android:hint="Hindi"
+            android:layout_below="@+id/subhindi"
+            />
+
+        <TextView
+            android:id="@+id/subsci"
+            android:text="Science"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"
+            android:textColor="#000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/subjecthindi"
+            />
+        <EditText
+            android:id="@+id/subjectscience"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24dp"
+            android:inputType="number"
+            android:hint="Science"
+            android:layout_below="@+id/subsci"
+            />
+
+        <TextView
+            android:id="@+id/submat"
+            android:text="Maths"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"
+            android:textColor="#000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/subjectscience"
+            />
+        <EditText
+            android:id="@+id/subjectmaths"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24dp"
+            android:inputType="number"
+            android:hint="Maths"
+            android:layout_below="@+id/submat"
+            />
+
+        <TextView
+            android:id="@+id/subsst"
+            android:text="Social Science"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"
+            android:textColor="#000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/subjectmaths"
+            />
+        <EditText
+            android:id="@+id/subjectsocial"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24dp"
+            android:inputType="number"
+            android:hint="Social Science"
+            android:layout_below="@+id/subsst"
+            />
+
+
+        <Button
+            android:id="@+id/btnInsert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save New Data"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="@color/purple_700"
+            android:layout_below="@id/subjectsocial"/>
+        <Button
+            android:id="@+id/btnUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Update Existing Data"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="@color/purple_700"
+            android:layout_below="@id/btnInsert"/>
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Delete Existing Data"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="@color/purple_700"
+            android:layout_below="@id/btnUpdate"/>
+        <Button
+            android:id="@+id/btnView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View Saved Data"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="@color/purple_700"
+            android:layout_below="@id/btnDelete"/>
+        <Button
+            android:id="@+id/btnViewunit1results"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Unit 1 Results"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="@color/cardview_dark_background"
+            android:layout_below="@id/btnView"/>
+
+        <Button
+            android:id="@+id/btnViewunit2results"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Unit 2 Results"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="@color/cardview_dark_background"
+            android:layout_below="@id/btnViewunit1results"/>
+        <Button
+            android:id="@+id/btnViewSem1results"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Semester 1 Results"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="@color/cardview_dark_background"
+            android:layout_below="@id/btnViewunit2results"/>
+        <Button
+            android:id="@+id/btnViewSem1grade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Semester 1 Grade"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="@color/cardview_dark_background"
+            android:layout_below="@id/btnViewSem1results"/>
+        <Button
+            android:id="@+id/btnViewunit3results"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Unit 3 Results"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="@color/cardview_dark_background"
+            android:layout_below="@id/btnViewSem1grade"/>
+        <Button
+            android:id="@+id/btnViewunit4results"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Unit 4 Results"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="@color/cardview_dark_background"
+            android:layout_below="@id/btnViewunit3results"/>
+        <Button
+            android:id="@+id/btnViewSem2results"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Semester 2 Results"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="@color/cardview_dark_background"
+            android:layout_below="@id/btnViewunit4results"/>
+        <Button
+            android:id="@+id/btnViewSem2grade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Semester 2 Grade"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="@color/cardview_dark_background"
+            android:layout_below="@id/btnViewSem2results"/>
+
+        <Button
+            android:text="LOGOUT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnViewSem2grade"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="42dp"
+            android:id="@+id/button1"
+            android:backgroundTint="@color/cardview_dark_background"
+            android:radius="5dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

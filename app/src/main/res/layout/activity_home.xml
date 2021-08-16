@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/algn"
+    android:padding="10dp"
+    tools:context=".home">
+
+    <Button
+        android:id="@+id/calculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="Calculate Results"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/cardview_dark_background"/>
+    <Button
+        android:id="@+id/print"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="Video Tutorial"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/cardview_dark_background"
+        android:layout_below="@id/calculate"/>
+    <Button
+        android:id="@+id/chatbot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="Formulas"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/cardview_dark_background"
+        android:layout_below="@id/print"/>
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="Exit"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/cardview_dark_background"
+        android:layout_below="@id/chatbot"/>
+
+    <ImageView
+        android:id="@+id/imageViewr"
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/tq"
+        android:layout_marginTop="100dp"
+        android:scaleType="centerCrop"
+        android:layout_below="@id/logout"/>
+
+
+
+</RelativeLayout>
